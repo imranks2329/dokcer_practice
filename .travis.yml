@@ -2,9 +2,9 @@ sudo: required
 services:
    - docker
 before_install:
-   - docker build -t imran2329/dokcer_practice -f Dockerfile.dev .
+   - docker build -t imran2329/docker -f Dockerfile.dev .
 
 scrips:
-   - docker run imran2329/dokcer_practice npm run test -- --coverage
+   - docker run imran2329/docker npm run test -- --coverage
 
 
